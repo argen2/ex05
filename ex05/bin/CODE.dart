@@ -14,3 +14,13 @@ print ('Exercice 5.4 - Afficher les tables de multiplication de $numerodetable a
    print('${table.toString()}');
 }
 
+
+
+ex05_5(treeheight){
+  print ('Exercice 5.5 - Afficher un Arbre centré de hauteur $treeheight');
+  
+  
+  
+  
+}
+

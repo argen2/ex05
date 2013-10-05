@@ -2,6 +2,25 @@ library CODE;
 
 part 'Console.dart';
 
+ex05_1(){
+  
+  print('Exercice 5.1 - Verifier si le texte contient uniquement des lettres et des espaces ');
+  var mot = "quebec", s = '';
+  for (var ch in mot.split('')) {
+    s = '${s}${ch} ';
+  }
+  var alpahabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];                 
+
+  print(s);
+  print(mot.split('') is List);
+ 
+  
+  
+
+}
+  
+
+ 
 
 ex05_4(numerodetable,qtyofresults){
   
@@ -32,4 +51,3 @@ ex05_5(treeheight){
   
 
   }
-

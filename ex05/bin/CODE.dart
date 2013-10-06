@@ -28,11 +28,22 @@ void ex05_2(){
   print('');
 }
  
-
+void ex05_3(){
+   print('Exercice 5.3 - Trouver le mot le plus long dans une phrase');
+  print('');
+   var answer3 = '';
+  var sentence2 = 'Mogu li se posluziti vasim telefonom';
+  print('La phrase utilisée est : ${sentence2}');
+  List werd = sentence2.split(' ');
+ answer3 = longlongword(werd);
+  print("Ce mot (le plus long) est : ${answer3}");
+  print(''); 
+}
+  
 void ex05_4(numerodetable,qtyofresults){
   
 print ('Exercice 5.4 - Afficher les tables de multiplication de $numerodetable avec $qtyofresults résultats');
-
+print ('');
   var table = new Map();
   
     for(num i=1 ; i <= qtyofresults; i++){
@@ -46,8 +57,8 @@ print ('Exercice 5.4 - Afficher les tables de multiplication de $numerodetable a
 
 
 void ex05_5(treeheight){
-  print ('Exercice 5.5 - Afficher un arbre centré de hauteur $treeheight');
-  
+  print ('Exercice 5.5 - Afficher un arbre **pas**centré de hauteur $treeheight');
+  print('');
   var tree = "*";
     var i = 0, l = '*';
   do {  print(l);
@@ -62,8 +73,8 @@ void ex05_5(treeheight){
   void main(){
     ex05_1();
     ex05_2();
-    
+    ex05_3();
     ex05_4(8,20);
-    ex05_5(3);
+    ex05_5(5);
     
   }

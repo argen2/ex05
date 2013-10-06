@@ -63,3 +63,20 @@ bool test_logique(phrase) {
 
 
 }
+String longlongword(werd){ 
+  String word = '';
+  for (int i = 0; i < werd.length; i++){
+    if (i == 0){
+      word = werd[0];
+    }
+    word = comparaison(word,werd[i]);
+  }
+  return(word);
+}
+String comparaison(String a, String b){
+  if (a.length > b.length){
+    return a;
+    } else {
+      return b;
+  }
+}

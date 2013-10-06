@@ -2,27 +2,23 @@ library CODE;
 
 part 'Console.dart';
 
-ex05_1(){
+void ex05_1(){
   
   print('Exercice 5.1 - Verifier si le texte contient uniquement des lettres et des espaces ');
-  var mot = "quebec", s = '';
-  for (var ch in mot.split('')) {
-    s = '${s}${ch} ';
-  }
-  var alpahabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];                 
-  print(s);
-  
-  print(mot.split('') is List);
- 
-  
-  
+  print('');
+  var phrase = "Da li iko ovdje govori englesk"; 
+  var answer = '';
+  print ('voici le texte :  $phrase'); 
+  answer = test_logique(phrase);
+  print('Reponse: ${answer}');
+  print('');
 
 }
   
 
  
 
-ex05_4(numerodetable,qtyofresults){
+void ex05_4(numerodetable,qtyofresults){
   
 print ('Exercice 5.4 - Afficher les tables de multiplication de $numerodetable avec $qtyofresults résultats');
 
@@ -33,11 +29,12 @@ print ('Exercice 5.4 - Afficher les tables de multiplication de $numerodetable a
    }
     
    print('${table.toString()}');
+   print('');
 }
 
 
 
-ex05_5(treeheight){
+void ex05_5(treeheight){
   print ('Exercice 5.5 - Afficher un arbre centré de hauteur $treeheight');
   
   var tree = "*";
@@ -50,4 +47,12 @@ ex05_5(treeheight){
   } while (i < (treeheight*2-treeheight));
   
 
+  }
+  void main(){
+    ex05_1();
+    
+    
+    ex05_4(8,20);
+    ex05_5(3);
+    
   }

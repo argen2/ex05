@@ -1,4 +1,14 @@
 part of CODE.dart;
+String testlogique2(sentences){ 
+  var longueurphrase = 0;
+  var longestsentence;
+  for (var i = 0; i < sentences.length; i++){
+    if(sentences[i].length > longueurphrase){
+      longueurphrase = sentences[i].length; 
+      longestsentence = sentences[i];
+    }
+  }
+  return longestsentence;}
 
 bool listedeslettres(String lettre) { //*Definition de l'alphabet comme un test logique
   switch (lettre) {
@@ -49,5 +59,7 @@ bool test_logique(phrase) {
     }
   }
     return true;
+    
+
 
 }

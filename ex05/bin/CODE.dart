@@ -8,14 +8,25 @@ void ex05_1(){
   print('');
   var phrase = "Da li iko ovdje govori englesk"; 
   var answer = '';
-  print ('voici le texte :  $phrase'); 
+  print ('Voici le texte qu on utilise :  $phrase'); 
   answer = test_logique(phrase);
-  print('Reponse: ${answer}');
+  if (answer==true) {
+    print('Reponse : Vrai - Le texte contient uniquement des lettres');}
+  else {print('Reponse : Faux - Le texte contient autre chose que des lettres');}
   print('');
 
 }
   
-
+void ex05_2(){
+  print('Exercice 5.2 - Trouver la plus longue phrase parmis plusieurs.');
+  print('');
+  var sentences= ['Dali bi elila plesati sa mnom','Jedan jezik nije nikad dosta','Pozovite policiju'];
+  print('Voici les phrases : $sentences ');
+  var answer2 = '';
+  answer2 = testlogique2(sentences);
+  print('La phrase la plus longue est : ${answer2}');
+  print('');
+}
  
 
 void ex05_4(numerodetable,qtyofresults){
@@ -50,7 +61,7 @@ void ex05_5(treeheight){
   }
   void main(){
     ex05_1();
-    
+    ex05_2();
     
     ex05_4(8,20);
     ex05_5(3);

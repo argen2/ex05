@@ -1,0 +1,14 @@
+ex05
+
+1/1
+
+CODE.dart
+->
+code.dart
+
+formater le code SVPL
+
+Da li iko ovdje govori englesk
+->
+Da li iko ovdje govori engleski
+
